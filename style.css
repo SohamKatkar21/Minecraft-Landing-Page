@@ -1,0 +1,220 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html,body{
+    height:100%;
+    width:100%;
+    background-color: #232222;
+}
+
+@font-face{
+    font-family: Minecraft text;
+    src: url(./MinecraftTen-VGORe.ttf);
+}
+
+
+main{ 
+    background-color: rgb(21, 21, 21);
+    
+    height: 100%;
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 10% 23% 58% 15%;
+    column-gap: 23px;
+    flex-wrap:wrap;
+grid-template-areas:
+"header header header header"
+"below-header below-header below-header below-header"
+"Game-A Game-B Game-C Game-D"
+"footer footer footer footer"
+}
+
+
+
+    #boxA{
+        background-color: rgb(34, 33, 33);
+        grid-area: header;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 5px solid black;
+     
+    }
+    #boxB{
+        background-color:rgb(21, 21, 21);
+            grid-area: below-header;
+            h1{
+                font-family: Minecraft text;
+                color:white;
+                text-align: center;
+                font-size: 58px;
+                padding-top: 55px;
+            }
+            a{
+                color:rgb(9, 165, 9);
+                font-size: 15px;
+                display: block;
+                text-align: center;
+                font-weight: 600;
+                font-family:Georgia, 'Times New Roman', Times, serif;
+                padding-top: 8px;
+
+            }
+    }
+    #boxC{
+        background-color: #4caf50;
+        grid-area: Game-A;
+        margin-left: 40px;
+
+#boxC1{
+    background-image: url(https://www.minecraft.net/content/dam/minecraftnet/games/minecraft/key-art/Homepage_Discover-our-games_MC-Vanilla-KeyArt_864x864.jpg);
+    height: 65%;
+        width: 100%;
+        background-size: cover;
+    }
+
+    #boxC2{
+       background-image: url(./Game\ 1.png);
+        height: 35%;
+        width: 100%;
+        background-size: cover;
+    }}
+
+
+    #boxD{
+        background-color: rgb(21, 21, 21);
+        grid-area: Game-B;
+
+        #boxD1{
+    background-image: url(https://www.minecraft.net/content/dam/minecraftnet/games/spicewood/key-art/Homepage_Discover-our-games_MC-Spicewood-KeyArt_864x864.jpg.jpg);
+    height: 65%;
+        width: 100%;
+        background-size: cover;
+    }
+ 
+
+       #boxD2{
+       background-image: url(./Game\ 2.png);
+        height: 33%;
+        width: 100%;
+        background-size: cover;
+        margin-bottom:30px;
+        margin-top: 8px;
+
+    }
+  
+
+
+    }
+    #boxE{
+        background-color:rgb(21, 21, 21); 
+        grid-area: Game-C; 
+
+        #boxE1{
+    background-image: url(https://www.minecraft.net/content/dam/minecraftnet/games/dungeons/key-art/Homepage_Discover-our-games_MC-Dungeons-KeyArt_864x864.jpg);
+    height: 65%;
+        width: 100%;
+        background-size: cover;
+    }
+ 
+
+       #boxE2{
+       background-image: url(./Game\ 3.png);
+        height: 33%;
+        width: 100%;
+        background-size: cover;
+        margin-bottom:30px;
+        margin-top: 12px;
+    }
+        
+
+
+
+    }
+    #boxF{
+        background-color: rgb(21, 21, 21);  
+        grid-area: Game-D;
+        margin-right: 40px;
+ #boxF1{
+    background-image: url(https://www.minecraft.net/content/dam/minecraftnet/games/badger/key-art/Homepage_Discover-our-games_MC-Legends-KeyArt_864x864.jpg);
+    height: 65%;
+        width: 100%;
+        background-size: cover;
+    }
+ 
+
+       #boxF2{
+       background-image: url(./Game\ 4.png);
+        height: 33%;
+        width: 100%;
+        background-size: cover;
+        margin-top: 15px;
+    }
+
+
+
+
+    }
+    #boxG{  
+        background-color:rgb(21, 21, 21);
+        grid-area: footer;
+
+    }
+select{
+    background-color: transparent;
+    outline:none;
+    border:none;
+    color:white;
+    font-size: 12px;
+    letter-spacing: 0.1ch;
+}
+h4#top{
+    color:white;
+    font-weight: 100;
+    letter-spacing: 0.1ch;
+    font-size:14px;
+    
+}
+#nav-side{
+ display: flex;
+ gap: 40px;
+margin-right: 100px; 
+
+}
+
+button{
+    color:rgb(15, 175, 15);
+    background-color: transparent;
+    border:2px solid rgb(12, 123, 12);
+    font-size: 12px;
+    padding: 9px 20px;
+    font-weight: 600;
+    width: 120px;
+    
+}
+
+#nav{
+    display:flex;
+    gap:35px;
+    padding-left: 200px;
+    padding-bottom: 5px;
+    margin-right: 230px;
+}
+i{
+    color:rgb(234, 229, 229);
+    font-size: 20px;
+    padding-top:7px;
+}
+#logo{
+   background-image: url(https://www.minecraft.net/content/dam/minecraftnet/games/minecraft/logos/Global-Header_MCCB-Logo_300x51.svg);
+  
+    background-size:100% 100%;
+    height:100px;
+    width: 700px;
+   margin-left: 50px;
+
+   
+}
